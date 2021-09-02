@@ -12,12 +12,20 @@ namespace Garage
             Ram ramThing = new Ram{FuelCapacity = 500.4, MainColor = "White", MaximumOccupancy = 4};
 
             fxs.Drive();
-            modelS.Drive();
-            mx410.Drive();
-            ramThing.Drive();
-
             fxs.Turn("left");
+            fxs.Stop();
+
+            modelS.Drive();
+            modelS.Turn("right");
+            modelS.Stop();
+
+            mx410.Drive();
+            mx410.Turn("left");
             mx410.Stop();
+
+            ramThing.Drive();
+            ramThing.Turn("right");
+            ramThing.Stop();
         }
     }
 }

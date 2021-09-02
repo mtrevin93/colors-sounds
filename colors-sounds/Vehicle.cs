@@ -11,11 +11,11 @@ namespace Garage
         {
             Console.WriteLine("Vrooom!");
         }
-        public void Turn(string direction)
+        public virtual void Turn(string direction)
         {
             Console.WriteLine($"The {this} turns {direction}.");
         }
-        public void Stop()
+        public virtual void Stop()
         {
             Console.WriteLine($"The {this} screeches to a stop. Screeeeeech!");
         }

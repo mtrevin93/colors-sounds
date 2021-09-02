@@ -16,7 +16,7 @@ namespace Garage
         }
         public override void Stop()
         {
-            Console.WriteLine($"The {this} rolls to a stop after rolling a mile down the runway")
+            Console.WriteLine($"The {this} rolls to a stop after rolling a mile down the runway");
         }
         public override string ToString()
         {

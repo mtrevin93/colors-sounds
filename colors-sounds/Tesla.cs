@@ -16,7 +16,7 @@ namespace Garage
         }
         public override void Stop()
         {
-            Console.WriteLine($"The {this} silently stop as if it never moved.")
+            Console.WriteLine($"The {this} silently stop as if it never moved.");
         }
         public override string ToString()
         {
