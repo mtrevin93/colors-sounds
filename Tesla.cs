@@ -8,5 +8,9 @@ namespace colors-sounds
         {
             // method definition omitted
         }
+        public override void Drive()
+        {
+            Console.WriteLine($"The {Tesla.MainColor} Tesla zips by you. MMmmmmm!")
+        }
     }
 }

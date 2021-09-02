@@ -8,5 +8,10 @@ namespace colors-sounds
         {
             // method definition omitted
         }
+
+        public override void Drive()
+        {
+            Console.WriteLine($"The {Zero.MainColor} Zero zips by you. Yeeeeowwwww!")
+        }
     }
 }
