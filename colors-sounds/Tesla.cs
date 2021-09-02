@@ -14,6 +14,10 @@ namespace Garage
         {
             Console.WriteLine($"The {this} zips by you. MMmmmmm!");
         }
+        public override void Stop()
+        {
+            Console.WriteLine($"The {this} silently stop as if it never moved.")
+        }
         public override string ToString()
         {
             return $"{MainColor} Tesla";
