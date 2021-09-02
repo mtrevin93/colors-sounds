@@ -1,6 +1,8 @@
-namespace colors-sounds
+using System;
+
+namespace Garage
 {
-    public class Tesla  // Electric car
+    public class Tesla : Vehicle // Electric car
     {
         public double BatteryKWh { get; set; }
 
@@ -10,7 +12,7 @@ namespace colors-sounds
         }
         public override void Drive()
         {
-            Console.WriteLine($"The {Tesla.MainColor} Tesla zips by you. MMmmmmm!")
+            Console.WriteLine($"The {MainColor} Tesla zips by you. MMmmmmm!");
         }
     }
 }

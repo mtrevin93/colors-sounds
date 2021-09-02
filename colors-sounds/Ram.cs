@@ -1,6 +1,8 @@
-namespace colors-sounds
+using System;
+
+namespace Garage
 {
-    public class Ram  // Gas powered truck
+    public class Ram : Vehicle  // Gas powered truck
     {
         public double FuelCapacity { get; set; }
 
@@ -10,7 +12,7 @@ namespace colors-sounds
         }
         public override void Drive()
         {
-            Console.WriteLine($"The {Ram.MainColor} Ram zips by you. Rrrrrruummmbbble!")
+            Console.WriteLine($"The {MainColor} Ram zips by you. Rrrrrruummmbbble!");
         }
     }
 }

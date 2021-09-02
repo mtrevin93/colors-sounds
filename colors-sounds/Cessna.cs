@@ -1,6 +1,8 @@
-namespace colors-sounds
+using System;
+
+namespace Garage
 {
-    public class Cessna  // Propellor light aircraft
+    public class Cessna : Vehicle // Propellor light aircraft
     {
         public double FuelCapacity { get; set; }
 
@@ -10,7 +12,7 @@ namespace colors-sounds
         }
         public override void Drive()
         {
-            Console.WriteLine($"The {Cessna.MainColor} Cessna zips by you. Zzzzooooomm!")
+            Console.WriteLine($"The {MainColor} Cessna zips by you. Zzzzooooomm!");
         }
     }
 }

@@ -1,4 +1,6 @@
-namespace colors-sounds
+using System;
+
+namespace Garage
 {
     public class Zero : Vehicle // Electric motorcycle
     {
@@ -11,7 +13,7 @@ namespace colors-sounds
 
         public override void Drive()
         {
-            Console.WriteLine($"The {Zero.MainColor} Zero zips by you. Yeeeeowwwww!")
+            Console.WriteLine($"The {MainColor} Zero zips by you. Yeeeeowwwww!");
         }
     }
 }
