@@ -12,7 +12,11 @@ namespace Garage
         }
         public override void Drive()
         {
-            Console.WriteLine($"The {MainColor} Cessna zips by you. Zzzzooooomm!");
+            Console.WriteLine($"The {this} zips by you. Zzzzooooomm!");
+        }
+        public override string ToString()
+        {
+            return $"{MainColor} Cessna";
         }
     }
 }

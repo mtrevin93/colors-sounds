@@ -11,5 +11,13 @@ namespace Garage
         {
             Console.WriteLine("Vrooom!");
         }
+        public void Turn(string direction)
+        {
+            Console.WriteLine($"The {this} turns {direction}.");
+        }
+        public void Stop()
+        {
+
+        }
     }
 }
