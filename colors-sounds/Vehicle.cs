@@ -17,7 +17,7 @@ namespace Garage
         }
         public void Stop()
         {
-
+            Console.WriteLine($"The {this} screeches to a stop. Screeeeeech!");
         }
     }
 }

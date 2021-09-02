@@ -17,6 +17,7 @@ namespace Garage
             ramThing.Drive();
 
             fxs.Turn("left");
+            mx410.Stop();
         }
     }
 }
