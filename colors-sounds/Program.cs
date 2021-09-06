@@ -7,9 +7,9 @@ namespace Garage
     {
         static void Main (string[] args)
         {
-            Zero fxs = new Zero() {BatteryKWh = 500};
-            Zero fx = new Zero(); { BatteryKWh = 300 }
-            Tesla modelS = new Tesla() { BatteryKwh = 250 };
+            Zero fxs = new Zero() {BatteryKWh = 500, CurrentChargePercentage = 0.3};
+            Zero fx = new Zero(); { BatteryKWh = 300, CurrentChargePercentage = 0.7 }
+            Tesla modelS = new Tesla() { BatteryKwh = 250, CurrentChargePercentage = 0.9 };
 
             List<IElectric> electricVehicles = new List<IElectric>() {
                 fx, fxs, modelS
@@ -34,8 +34,8 @@ namespace Garage
 
             /***********************************************/
 
-            Ram ram = new Ram ();
-            Cessna cessna150 = new Cessna ();
+            Ram ram = new Ram () { FuelCapacity = 35, CurrentTankPercentage = 0.5 };
+            Cessna cessna150 = new Cessna () { FuelCapacity = 25, CurrentTankPercentage = 0.8 };
 
             List<IGas> gasVehicles = new List<IGas>() {
                 ram, cessna150
