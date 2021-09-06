@@ -10,12 +10,12 @@ namespace Garage
 
         public void RefuelTank()
         {
-            CurrentTankPercentage = 1.0;
+            CurrentTankPercentage = 1.00;
         }
         public double CurrentTankPercentage { get; set; }
         public void DisplayCurrentFuel()
         {
-            Console.WriteLine(CurrentTankPercentage.ToString("P", CultureInfo.InvariantCulture));
+            Console.WriteLine(CurrentTankPercentage.ToString("0.## %"));
         }
         public override void Drive()
         {

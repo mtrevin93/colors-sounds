@@ -14,7 +14,7 @@ namespace Garage
         public double CurrentChargePercentage { get; set; }
         public void DisplayCurrentCharge()
         {
-            Console.WriteLine(CurrentChargePercentage.ToString("P", CultureInfo.InvariantCulture));
+            Console.WriteLine(CurrentChargePercentage.ToString("0.## %"));
         }
         public override void Drive()
         {
