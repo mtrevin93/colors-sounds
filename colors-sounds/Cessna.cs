@@ -3,14 +3,15 @@ using System;
 namespace Garage
 {
     public class Cessna : Vehicle, IGas // Propellor light aircraft
-    {
+
     {
         public double FuelCapacity { get; set; }
 
         public void RefuelTank()
         {
-            CurrentTankPercentage = 1
+            CurrentTankPercentage = 1;
         }
+        public double CurrentTankPercentage { get; set; }
         public override void Drive()
         {
             Console.WriteLine($"The {this} zips by you. Zzzzooooomm!");

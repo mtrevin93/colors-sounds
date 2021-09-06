@@ -8,9 +8,9 @@ namespace Garage
 
         public void RefuelTank()
         {
-            CurrentTankPercentage = 1
+            CurrentTankPercentage = 1;
         }
-        public float CurrentTankPercentage { get; set; }
+        public double CurrentTankPercentage { get; set; }
         public override void Drive()
         {
             Console.WriteLine($"The {this} zips by you. Rrrrrruummmbbble!");

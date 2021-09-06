@@ -8,8 +8,8 @@ namespace Garage
         static void Main (string[] args)
         {
             Zero fxs = new Zero() {BatteryKWh = 500, CurrentChargePercentage = 0.3};
-            Zero fx = new Zero(); { BatteryKWh = 300, CurrentChargePercentage = 0.7 }
-            Tesla modelS = new Tesla() { BatteryKwh = 250, CurrentChargePercentage = 0.9 };
+            Zero fx = new Zero() { BatteryKWh = 300, CurrentChargePercentage = 0.7 };
+            Tesla modelS = new Tesla() { BatteryKWh = 250, CurrentChargePercentage = 0.9 };
 
             List<IElectric> electricVehicles = new List<IElectric>() {
                 fx, fxs, modelS

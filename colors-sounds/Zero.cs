@@ -8,9 +8,9 @@ namespace Garage
 
         public void ChargeBattery()
         {
-            CurrentChargePercentage = 1
+            CurrentChargePercentage = 1;
         }
-        public float CurrentChargePercentage { get; set; }
+        public double CurrentChargePercentage { get; set; }
 
         public override void Drive()
         {

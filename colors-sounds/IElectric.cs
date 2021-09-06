@@ -5,7 +5,8 @@ namespace Garage
     {
         double BatteryKWh {get; set;}
         void ChargeBattery();
-        float CurrentChargePercentage{get; set;};
+        double CurrentChargePercentage{get; set;}
+        void DisplayCurrentCharge();
     }
 
 }
