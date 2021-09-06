@@ -2,7 +2,7 @@ using System;
 
 namespace Garage
 {
-    public class Tesla : Vehicle // Electric car
+    public class Tesla : Vehicle, IElectric // Electric car
     {
         public double BatteryKWh { get; set; }
 
@@ -10,6 +10,7 @@ namespace Garage
         {
             // method definition omitted
         }
+        public double 
         public override void Drive()
         {
             Console.WriteLine($"The {this} zips by you. MMmmmmm!");

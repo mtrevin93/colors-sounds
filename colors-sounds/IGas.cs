@@ -2,7 +2,7 @@ namespace Garage
 {
     public interface IGas
     {
-        double FuelCapacity;
-        void RefuelTank;
+        double FuelCapacity{get; set;}
+        void RefuelTank();
     }
 }

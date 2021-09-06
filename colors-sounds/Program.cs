@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Garage
 {
@@ -6,9 +7,9 @@ namespace Garage
     {
         static void Main (string[] args)
         {
-            Zero fxs = new Zero();
-            Zero fx = new Zero();
-            Tesla modelS = new Tesla();
+            Zero fxs = new Zero() {BatteryKWh = 500};
+            Zero fx = new Zero(); { BatteryKWh = 300 }
+            Tesla modelS = new Tesla() { BatteryKwh = 250 };
 
             List<IElectric> electricVehicles = new List<IElectric>() {
                 fx, fxs, modelS
