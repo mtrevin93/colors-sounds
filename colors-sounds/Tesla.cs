@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 
 namespace Garage
 {
@@ -8,9 +9,13 @@ namespace Garage
 
         public void ChargeBattery()
         {
-            CurrentChargePercentage = 1;
+            CurrentChargePercentage = 1.0;
         }
         public double CurrentChargePercentage { get; set; }
+        public void DisplayCurrentCharge()
+        {
+            Console.WriteLine(CurrentChargePercentage.ToString("P", CultureInfo.InvariantCulture));
+        }
         public override void Drive()
         {
             Console.WriteLine($"The {this} zips by you. MMmmmmm!");

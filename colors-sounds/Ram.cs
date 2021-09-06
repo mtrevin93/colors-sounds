@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 
 namespace Garage
 {
@@ -8,7 +9,7 @@ namespace Garage
 
         public void RefuelTank()
         {
-            CurrentTankPercentage = 1;
+            CurrentTankPercentage = 1.0;
         }
         public double CurrentTankPercentage { get; set; }
         public override void Drive()
@@ -18,6 +19,10 @@ namespace Garage
         public override void Stop()
         {
             Console.WriteLine($"The {this} gently rolls to a stop.");
+        }
+        public void DisplayCurrentFuel()
+        {
+            Console.WriteLine(CurrentTankPercentage.ToString("P", CultureInfo.InvariantCulture));
         }
         public override string ToString()
         {

@@ -18,7 +18,7 @@ namespace Garage
             Console.WriteLine("Electric Vehicles");
             foreach(IElectric ev in electricVehicles)
             {
-                Console.WriteLine($"{ev.CurrentChargePercentage}");
+                ev.DisplayCurrentCharge();
             }
 
             foreach(IElectric ev in electricVehicles)
@@ -44,7 +44,7 @@ namespace Garage
             Console.WriteLine("Gas Vehicles");
             foreach(IGas gv in gasVehicles)
             {
-                Console.WriteLine($"{gv.CurrentTankPercentage}");
+                gv.DisplayCurrentFuel();
             }
 
             foreach(IGas gv in gasVehicles)
