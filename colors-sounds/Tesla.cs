@@ -8,9 +8,9 @@ namespace Garage
 
         public void ChargeBattery()
         {
-            // method definition omitted
+            CurrentChargePercentage = 1
         }
-        public double 
+        public float CurrentChargePercentage { get; set; }
         public override void Drive()
         {
             Console.WriteLine($"The {this} zips by you. MMmmmmm!");

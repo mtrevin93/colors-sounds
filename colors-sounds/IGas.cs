@@ -4,5 +4,6 @@ namespace Garage
     {
         double FuelCapacity{get; set;}
         void RefuelTank();
+        float CurrentTankPercentage{get; set;}
     }
 }

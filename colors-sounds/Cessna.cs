@@ -4,11 +4,12 @@ namespace Garage
 {
     public class Cessna : Vehicle, IGas // Propellor light aircraft
     {
+    {
         public double FuelCapacity { get; set; }
 
         public void RefuelTank()
         {
-            // method definition omitted
+            CurrentTankPercentage = 1
         }
         public override void Drive()
         {
